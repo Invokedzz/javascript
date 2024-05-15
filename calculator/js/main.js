@@ -5,7 +5,7 @@ function add() {
 var tn1 = document.getElementById('txtn1');
 var tn2 = document.getElementById('txtn2');
 var res = document.getElementById('res');
-var n1 = parseInt(tn1.value);
+var n1 = Number(tn1.value);
 var n2 = Number(tn2.value);
 var x = n1 + n2;
 res.innerHTML = `The addiction between ${n1} and ${n2} is equal to ${x}`;
@@ -18,7 +18,7 @@ function sub() {
 var tn3 = document.getElementById('txtn3');
 var tn4 = document.getElementById('txtn4');
 var result = document.getElementById('ressub');
-var n3 = parseFloat(tn3.value);
+var n3 = Number(tn3.value);
 var n4 = Number(tn4.value);
 var y = n3 - n4;
 ressub.innerHTML = `The subtraction between ${n3} and ${n4} is equal to ${y}`;
