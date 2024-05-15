@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: lightblue;
+            color: #fff;
+            font: normal 18pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        Introduction to DOM
+    </h1>
+
+    <p>
+        Result
+    </p>
+
+    <div id="msg">
+        Click here
+    </div>
+
+    <div class="baldman">
+        Whatsapp
+    </div>
+
+    <script>
+        //Window -> (location, document, history). Document -> Html -> Head, Body...
+
+        //Id, class, name, tags.
+
+        window.document.write('Goodbye, World');
+        //document.write(window.document.URL);
+
+        var x = window.document.getElementsByTagName('p')[0];
+        window.document.write('Esta escrito assim ' + x.innerText);
+
+        var y = window.document.getElementById('msg');
+        window.document.write('Esta escrito assim ' + y.innerText);
+
+        y.style.background = 'blue';
+        y.style.width = '400px';
+
+        //var y = window.document.querySelector('div#msg');
+        //y.style.background = 'blue';
+
+        var w = window.document.getElementsByClassName('baldman')[0];
+        w.style.background = 'green';
+
+        var l = document.getElementsByClassName('baldman')[0];
+        l.style.background = 'black';
+        l.style.width = '200px';
+     
+        
+
+        var body = window.document.body;
+        
+
+    </script>
+</body>
+</html>
