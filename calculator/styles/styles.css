@@ -6,9 +6,32 @@
     --color4: #32A89C;
     --color5: #00635A;
 }
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Reddit Sans', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #00635A;
+}
+
+main {
+    height: 100vh;
+    margin: auto;
+}
+
+main > .principal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 80vh;
+    width: 800px;
+    background-color: #fff;
+
 }
