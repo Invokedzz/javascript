@@ -1,4 +1,3 @@
-
 var bt = document.getElementById('btn');
 bt.addEventListener('click', add);
 function add() {
