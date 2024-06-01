@@ -45,4 +45,15 @@ let imc = Number(pesoPaciente / (alturaPaciente * alturaPaciente));
 
 console.log(imc)
 
-console.log('Atendemos hoje', nomePaciente + sobrenomePaciente, 'ele possui' ,idadePaciente, 'mede' ,pesoPaciente, 'tem', alturaPaciente, 'e seu IMC eh igual a', IMCPaciente,)
+console.log('Atendemos hoje', nomePaciente + sobrenomePaciente, 'ele possui' ,idadePaciente, 'mede' ,pesoPaciente, 'tem', alturaPaciente, 'e seu IMC eh igual a', IMCPaciente,);
+
+const passo = 50;
+let contador = 0;
+contador += 2; // contador = contador + 2;
+contador += passo; // contador = contador + 50; 
+const eleva = 3;
+contador *= eleva;
+
+let operation = (contador ** eleva);
+console.log(contador);
+console.log(operation);
