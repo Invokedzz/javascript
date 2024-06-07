@@ -20,9 +20,9 @@ console.log('Month', data.getMonth()); // Mes inicia no 0. Ou seja, janeiro = 0.
 console.log('Ano', data.getFullYear());
 console.log('Hora', data.getHours());
 console.log('Minutos', data.getMinutes());
-console.log('Segundos', data.getSeconds()); */
+console.log('Segundos', data.getSeconds()); 
 
-/* function zerado (numero) {
+function zerado (numero) {
     if (numero >= 10) {
         return numero;
     } else {
@@ -30,16 +30,16 @@ console.log('Segundos', data.getSeconds()); */
     }
 }
 
-const data = new Date();
+ const data = new Date();
 function revelaData (data) {
     const dia = zerado(data.getDate());
     const mes = zerado(data.getMonth() + 1);
     const ano = zerado(data.getFullYear());
     return `${dia}/${mes}/${ano}`;
-}
+}  
 const dataBr = revelaData(data);
 console.log(dataBr) */
-
+ 
 const data = new Date();
 const dayof = data.getDay();
 let daysoftheweek = '';
@@ -61,12 +61,12 @@ function dayscount () {
     }
 }
 dayscount();
-console.log(dayof, daysoftheweek);
+console.log(dayof, daysoftheweek); 
 
-/* function parImpar (x) {
+function parImpar (x) {
     if (x % 2 == 0) {
         return 'Par';
     } else {
         return 'Impar';
     }
-} */
+} 
