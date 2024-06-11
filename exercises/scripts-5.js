@@ -133,3 +133,13 @@ try {
 } finally {
     console.log('Tenha um bom dia.')
 }
+function funcaoDointervalo(){
+    console.log(retornaHora());
+}
+setTimeout(function(){
+    clearInterval(timer);
+}, 10000);
+
+const timer = setInterval(function () {
+    console.log(retornaHora());
+}, 1000);
