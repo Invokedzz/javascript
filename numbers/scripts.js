@@ -1,4 +1,4 @@
-let numero = 1;
+/*let numero = 1;
 let numero2 = 3;
 let numeroGrande = 10.578955;
  console.log(numero.toString() + numero2); // conversao de numero em string "toString()"
@@ -24,7 +24,7 @@ console.log(Math.random()); // Pega valores aleatorios.
 
 const aleatorio = Math.round(Math.random() * (10 - 5) + 10);
 
-console.log(Math.pow(2, 10)) // mesma coisa que dois elevado a dez.
+console.log(Math.pow(2, 10)) // mesma coisa que dois elevado a dez. */
 
 
 
