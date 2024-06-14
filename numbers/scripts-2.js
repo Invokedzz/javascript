@@ -112,7 +112,7 @@ function resposta (callback) {
     callback(nome);
 }
 resposta(cumprimento); */
-(function () {
+/*(function () {
     const nome = 'Alfredo';
     console.log(nome);
 }) (); // IIFE -> immediately invoked function expression.
@@ -125,4 +125,4 @@ resposta(cumprimento); */
         console.log(falaOi('Oi'));
     }
     falaNome();
-})(30, 50, 100); // Essa função precisa estar dentro do parênteses.
+})(30, 50, 100); // Essa função precisa estar dentro do parênteses. */
