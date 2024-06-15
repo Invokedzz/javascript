@@ -1,4 +1,4 @@
-const alunos = [ 'Luiz', 'Chico', 'Pedro' ];
+/*const alunos = [ 'Luiz', 'Chico', 'Pedro' ];
 
 console.log(alunos[0]); // Luiz;
 console.log(alunos[1]); // Chico;
@@ -19,7 +19,7 @@ alunos.unshift('Shirlo'); // Altera a ordem inicial do array. Nesse caso, Shirlo
 
 // alunos.pop(); => remove o elemento final do array.
 
-/* alunos.pop();
+alunos.pop();
 const removido = alunos.pop();
 
 console.log(alunos);

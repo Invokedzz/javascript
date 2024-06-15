@@ -1,4 +1,4 @@
-cores = ['Red', 'Blue', 'Green', 'Yellow'];
+/*cores = ['Red', 'Blue', 'Green', 'Yellow'];
 for (let colors of cores) {
     console.log(colors);
 }
@@ -18,7 +18,7 @@ function bhaskara (a = 1, b = 5, c = 6) {
 
 // Analisando return. Retorna um valor e termina a função.
 
-/*function soma (a, b) {
+function soma (a, b) {
     return a + b
 } console.log(soma(5, 2));
 function soma2 (a, b) {
@@ -26,7 +26,7 @@ function soma2 (a, b) {
 } soma2(5, 2);
 document.addEventListener('click', function () {
     document.body.style.background = 'blue';
-});*/
+});
 /*function criaPessoa (nome, sobrenome) {
     return { nome, sobrenome };
 }

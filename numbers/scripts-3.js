@@ -1,4 +1,4 @@
-let calculoDelta;
+/*let calculoDelta;
 let functionBhaskara;
 
 function inicioBhaskara(a, b, c) {
@@ -11,7 +11,7 @@ function inicioBhaskara(a, b, c) {
 let delta = b * b - 4*a*c;
 return delta;
 })(1, 2, 0); => removemos apenas essa funcionalidade. Cuidado ao montar funções desse tipo :).
-*/
+
 (function finalBhaskara() {
     functionBhaskara = function(a = 1, b = 2, c = 0) {
         calculoDelta = inicioBhaskara(a, b, c);
@@ -106,4 +106,4 @@ console.log(py.fullName())
 console.log(px);
 console.log(px.fullName());
 console.log(px.conversation('talking about something...'));
-console.log(px.calculus) 
+console.log(px.calculus) */

@@ -1,4 +1,4 @@
-let num = Math.random() * (100);
+/*let num = Math.random() * (100);
 let fixar = (num.toFixed(2));
 let arredondamento = Math.round(fixar);
 
@@ -23,7 +23,7 @@ console.log(fixar2 ** 0.5);
 console.log(Number.isInteger(fixar2));
 console.log(Number.isNaN(fixar2));
 console.log(Math.ceil(fixar2));
-console.log(Math.floor(fixar2));
+console.log(Math.floor(fixar2)); */
 
 
 
