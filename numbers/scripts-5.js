@@ -48,6 +48,7 @@ function registeruser (nuser, user, password) {
 const pa = registeruser('Chico', 'Ronnaldo', '123');
 console.log(pa.firstuser());
 console.log(pa.displayInfo()); 
+
 function expressdatabase (user, password) {
     let passwordValid = false;
     return {
