@@ -1,48 +1,70 @@
-
-function registerUser (user, nuser, password) {
-    let passwordisplay;
-    let userdisplay;
-    let veteranusersdisplay;
+function registeruser (nuser, user, password) {
+    let passwordIsValid = false;
     return {
         nuser,
-        user,
+        user, 
         password,
-        firstuser() {
+        firstuser () {
             try {
-                return `Welcome ${this.nuser}`;
-            } catch (e) {
-                if (!nuser) {
-                    return otherusers();
+                if (this.nuser) {
+                    return `Welcome ${this.nuser}`;
+                } else {
+                    throw new Error('Invalid user');
                 }
+            } catch (e) {
+                return this.otherusers();
             }
         },
         otherusers() {
             try {
-                return `Welcome back ${this.user}`
-            } catch(e) {
-                if (!user) {
-                    return nuser;
+                if (this.user) {
+                    return `Welcome back ${this.user}`;
+                } else {
+                    throw new Error('Invalid user');
+                } 
+            } catch (e) {
+                if (this.nuser) {
+                    return this.nuser;
+                } else {
+                    return 'Unknown user';
                 }
             }
         },
-        enterPassword() {
-            if (isNaN.password) return false;
-            else return true;
-        },
-        displayInfo() {
-            enterPassword();
-            firstuser();
-            therusers();
+         enterPassword() {
+            if (!isNaN(this.password)) {
+                passwordIsValid = true;
+            }
+            return passwordIsValid;
+         },
+         displayInfo() {
+            if (this.enterPassword() && this.nuser && this.user) {
+                return `User info: ${this.user}, ${this.nuser}`;
+            } else {
+                return 'Try Again!'
+            }
+         },
+    };
+}
+const pa = registeruser('Chico', 'Ronnaldo', '123');
+console.log(pa.firstuser());
+console.log(pa.displayInfo()); 
+function expressdatabase (user, password) {
+    let passwordValid = false;
+    return {
+        user,
+        password,
+        insertcomponentsx () {
             try {
-                return password, nuser, user;
+                if (password.value === '' || password.length <= 6) return 'Verme miserável';
+                return passwordValid = true;
             } catch (e) {
-                if (!passwordisplay || !userdisplay || !veteranusersdisplay) return 'Try Again!';
-                else return true;
+                console.error('Error inserting components:', e);
+                return false;
             }
         },
-    }
-
+    };
 }
-const pa = registerUser('Ronaldo', 'Chico', '123');
-console.log(pa.firstuser());
-console.log(pa.displayInfo());
+const pb = expressdatabase('Anão de Pernambuco', '');
+console.log(pb.user, pb.password);
+let db2 = expressdatabase('username', '123');
+console.log(db2.insertcomponentsx())
