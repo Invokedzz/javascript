@@ -11,7 +11,7 @@ function recursiva2 (limitof) {
     recursiva2(limitof);
     console.log(limitof);
 }
-recursiva2(0); */
+recursiva2(0); 
 
 function* geradora () {
     yield 'Valor 1';
@@ -24,7 +24,7 @@ console.log(g1.next().value);
 console.log(g1.next().value);
 console.log(g1.next());*/
 
-for (let valor of g1) {
+/*for (let valor of g1) {
     console.log(valor);
 }
 
@@ -55,4 +55,4 @@ const g5 = geradora5();
 const func = g5.next().value;
 const func2 = g5.next().value;
 func();
-func2();
+func2(); */
