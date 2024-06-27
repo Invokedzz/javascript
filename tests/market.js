@@ -139,3 +139,8 @@ function CoffeeMug (name, price, stock, styles) {
 
 CoffeeMug.prototype = Object.create(Product.prototype);
 CoffeeMug.prototype.constructor = CoffeeMug;
+
+const pw = new Coffee ('Coffee', 15, 4, 'package');
+const pr = new CoffeeMug ('White mug', 5, 10, 'White');
+console.log(pr.name, pr.price, pr.stock, pr.styles);
+console.log(pw.name, pw.price, pw.stock, pw.types);
