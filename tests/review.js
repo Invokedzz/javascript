@@ -14,7 +14,7 @@ function loadContent (msg, timer) {
         }, timer);
     })
 }
-/*
+
 
 async function displaymsg () {
     const firstmsg = await loadContent('Iniciando...', loadingnumbers());
@@ -26,11 +26,11 @@ async function displaymsg () {
 }
 displaymsg();
 
-*/
+
 
 // Async só pode ser chamado se houver o await na função (ou seja, algo mandando a função esperar). Nós retornamos uma nova Promise, que contém uma resposta (response) e uma negação (reject). Caso o usuário retorne algo que não seja uma string, ele receberá uma resposta dada pelo reject. Caso contrário, o Timeout vai ocorrer de forma padrão. Note a função "loadContent(msg, timer)" quando escrevemos "const msg = await loadContent('Iniciando...', loadingnumbers())" os parâmetros estão ligados aqui. Msg = 'Iniciando...', timer = 'loadingnumbers()'.
 
-/* async function catchError () {
+ async function catchError () {
     try {
     const displayFirstmsg = await loadContent('Starting...', loadingnumbers());
     console.log(displayFirstmsg);
@@ -46,9 +46,9 @@ catchError();
 
 // Aqui, a única diferença dessa para a outra função é a adição do método try/catch. Portanto, diferentemente da outra função, essa é capaz de pegar erros.
 
-*/
 
-/* function Items (name, category) {
+
+function Items (name, category) {
     Object.defineProperty(this, 'name', {
         enumerable: true,
         configurable: true,
@@ -77,9 +77,9 @@ catchError();
     });
 }
 const item = new Items('Avion', 'Movie');
-console.log(item) */
+console.log(item) 
 
-/* function Account (name, profile, id) {
+function Account (name, profile, id) {
     this.profile = profile;
     this.name = name;
     this.id = id;
@@ -96,9 +96,9 @@ Account.prototype.show = function () {
 }
 
 const a = new Account ('Peréz', 'Paulin', 667456);
-a.averiguar(700000); */
+a.averiguar(700000); 
 
-/* 
+
 function Conta (agencia, conta, saldo) {
     this.agencia = agencia;
     this.conta = conta;
@@ -121,8 +121,8 @@ Conta.prototype.versaldo = function () {
 }
 const acc = new Conta('Bradesco', 'Sams', 70);
 acc.depositar(100);
-acc.saque(90); */
-/*
+acc.saque(90); 
+
 function Guardian (sword, shield) {
     this.sword = sword;
     this.shield = shield;
@@ -158,8 +158,7 @@ const ss = new Slay (101, 20, 15);
 ss.Union(10, 1);
 console.log(ss);
 
-*/
-/*
+
 class Individual {
     constructor (helmet, armor) {
         this.helmet = helmet;
@@ -186,7 +185,7 @@ class Individual {
 
 const tt = new Individual (50, 30);
 console.log(tt.increasearmorpower());
-console.log(tt.iap()) */
+console.log(tt.iap()) 
 
 const _power = Symbol();
 class Powerups {
@@ -210,11 +209,11 @@ class Powerups {
     }
 }
 const look = new Powerups( ' ', 'Dark Fireball');             // Apesar de inserirmos o valor 30, não há mudança no valor de "fireball" por conta de Symbol().
-/*for (let upgrade = 1; upgrade < 20; upgrade ++) {
+for (let upgrade = 1; upgrade < 20; upgrade ++) {
      console.log(look.raiseEvenFurther());
-} */
+} 
 
-/* function Pedreiro (martelo, material) {
+function Pedreiro (martelo, material) {
     Object.defineProperty (this, 'martelo', {
         enumerable: true,
         configurable: true,
@@ -235,5 +234,5 @@ const look = new Powerups( ' ', 'Dark Fireball');             // Apesar de inser
 }
 
 const mm = new Pedreiro ('Martelo', );
-console.log(mm.martelo) */
+console.log(mm.martelo) 
 
