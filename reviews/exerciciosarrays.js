@@ -65,3 +65,28 @@ function fn (x, y) {
 }                                     // Toda essa função age como um reduce.
 let Total = T(ini, fn, arr);
 console.log(Total); */
+
+function composeFunctions (functions) {
+    if (functions.length === 0) return function (x) {return x};
+    return function (x) {
+    let result = x;
+    for (let i = functions.length - 1; i >= 0; i--) {
+        result = functions[i](result); // Aplica cada um dos valores para o result. Por meio de functions[i](result);
+    }
+    return result;                  // O propósito do loop é fazer com que as funções abaixo sejam aplicadas de maneira sequencial. 
+ }
+}
+
+function add10 (x) {
+    return x + 10;
+}
+function mult4 (x) {
+    return x * 4;
+}
+function sub5 (x) {
+    return x - 5;
+}
+
+const functions = [add10, mult4, sub5];
+const composedFn = composeFunctions(functions);
+console.log(composedFn(5))

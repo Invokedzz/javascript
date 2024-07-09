@@ -234,5 +234,5 @@ function Pedreiro (martelo, material) {
 }
 
 const mm = new Pedreiro ('Martelo', );
-console.log(mm.martelo) 
+console.log(mm.martelo); 
 

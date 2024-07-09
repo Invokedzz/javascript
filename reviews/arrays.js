@@ -58,5 +58,3 @@ const acessoHistoria = periodosHistoricos.map(name => name.nome).filter(name => 
 const acessoaoAno = periodosHistoricos.map(periodo => periodo.ano)
 //console.log(acessoHistoria);
 //console.log(acessoaoAno);
-
-
