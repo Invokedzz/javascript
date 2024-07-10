@@ -45,3 +45,17 @@ var reduce = function(nums, fn, init) {
     }
     return res;
 }
+
+let fibonnaci = function* () {
+    let a = 0;
+    let b = 1;
+    while (true) {
+        yield a;
+        [a, b] = [b, a + b];    // Variável a vai receber b. Variável b vai receber a + b.
+    }
+}
+
+const fibonnaciloop = fibonnaci();
+for (let x = 0; x < 30; x++) {
+    //console.log(fibonnaciloop.next().value);
+}

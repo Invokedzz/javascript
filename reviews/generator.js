@@ -47,3 +47,44 @@ const f1 = g5.next().value;
 const f2 = g5.next().value;
 f1();
 f2();
+
+function goFind () {
+    return function (x) {
+        return x;
+    }
+}
+const f = goFind();
+console.log(f(10));
+
+function goAddition () {
+    return function (x, y) {
+        return x + y;
+    }
+}
+
+const fg = goAddition();
+console.log(fg(10, 2));
+
+function fcomposta (func) {
+    return function (x) {
+        let result = x;
+        for (let i = x.length - 1; i >= 0; i--) {
+            result = func[i](result);
+        }
+        return result;
+    }
+}
+
+function subSix (x) {
+    return x - 6;
+}
+function addTen (x) {
+    return x + 10;
+}
+function multiplyEleven (x) {
+    return x * 2;
+}
+
+const functions = [subSix, addTen, multiplyEleven];
+const compo = fcomposta(functions);
+console.log(compo(11));
