@@ -66,7 +66,7 @@ Promise.any([oneFetch, twoFetch, threeFetch]).then((responses) => {
 
 /* async function fetchProducts() {
     try {
-        const response = await fetch( "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
+        const response = await fetch( '"https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"');
         if (!response.ok) {
             throw new Error(`http error: ${response.status}`);
         }
@@ -80,7 +80,7 @@ Promise.any([oneFetch, twoFetch, threeFetch]).then((responses) => {
 fetchProducts(); // Returns "baked beans". */
 
 async function fetchBeans () {
-    const res = fetch( "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
+    const res = fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json");
     if (!res.ok) {
         throw new Error(`http error: ${res.status}`);
     }
