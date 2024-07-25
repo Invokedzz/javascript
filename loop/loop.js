@@ -1,21 +1,14 @@
-/* Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax² + bx + c.
-
-O programa deverá pedir os valores de a, b e c e fazer as consistências, informando ao usuário nas seguintes situações:
-
-Se o usuário informar o valor de A igual a zero, a equação não é do segundo
-    grau e o programa não deve fazer pedir os demais valores,
-    sendo encerrado;
-Se o delta calculado for negativo, a equação não possui raízes reais.
-    Informe ao usuário e encerre o programa;
-Se o delta calculado for igual a zero a equação possui apenas uma raiz
-    real; informe-a ao usuário;
-Se o delta for positivo, a equação possui duas raiz reais;
-    informe-as ao usuário; */
-
-
 function bhaskara (a, b, c, x) {
     let delta = (a * (x ** 2) + (b * x) + c);
     if (a === 0) return;
     if (!delta < 0 && delta >= 0) return true;
     if (delta < 0) return false;
 }
+
+let x = [2, 3, 4];
+for (let i = x.length - 1; i >= 0; i--) {
+    //console.log(x[i]);
+}
+
+// Faça um programa que leia 5 números e informe a soma e a média dos números.
+
