@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: DM Sans;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.headercontainer {
+    background-color:#b7cae4ec;;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.6s all;
+}
+
+a:hover {
+    color: rgb(124, 187, 242);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin: 0 20px;
 }
