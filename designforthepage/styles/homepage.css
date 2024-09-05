@@ -84,6 +84,50 @@ article {
     color: #fff;
 }
 
+.feedbacktext {
+    padding-bottom: 5%;
+}
+
 .textfooter {
     padding-top: 1rem;
+}
+
+.feedbackpost {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedbackpost input[type="text"],
+.feedbackpost input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.feedbackpost .messagebox {
+    height: 100px;
+    resize: vertical;
+}
+
+.feedbackpost button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedbackpost button:hover {
+    background-color: #0056b3;
 }
