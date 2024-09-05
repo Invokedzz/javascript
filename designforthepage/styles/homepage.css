@@ -46,8 +46,16 @@ li {
 
 h1 {
     margin-bottom: 10px;
-    padding-bottom: 5px;
     font-size: 40px;
+}
+
+.textmain {
+    padding-bottom: 60px;
+}
+
+span {
+    text-decoration: underline;
+    color: rgb(129, 209, 236);
 }
 
 p {
