@@ -111,3 +111,136 @@ footer p {
 footer p:last-of-type {
     margin-bottom: 0;
 }
+
+.profile-form {
+    background-color: #2e2e2e; /* Dark background for form */
+    color: #f0f0f0; /* Light text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for form labels and inputs */
+.profile-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+}
+
+/* Styling for form button */
+.profile-form button {
+    background-color: #4caf50; /* Green button */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.profile-form button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Styling for profile picture section */
+.profile-picture {
+    margin-bottom: 16px;
+}
+
+.profile-pic-container {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.profile-pic-container img {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4caf50;
+    background-color: #3a3a3a;
+}
+
+.profile-form input[type="file"] {
+    display: block;
+    margin-top: 8px;
+}
+
+.book-form {
+    background-color: #2e2e2e; /* Dark background for form */
+    color: #f0f0f0; /* Light text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for form labels and inputs */
+.book-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.book-form input,
+.book-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+}
+
+/* Styling for form button */
+.book-form button {
+    background-color: #4caf50; /* Green button */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.book-form button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Adjustments for form spacing and layout */
+.book-form .form-group {
+    margin-bottom: 16px;
+}
+
+.book-form textarea {
+    resize: vertical; /* Allow users to resize the textarea vertically */
+}
+
+/* Ensure list items are styled appropriately */
+.book-list {
+    list-style: none;
+    padding: 0;
+}
+
+.book-list li {
+    margin-bottom: 10px;
+}
+
+.book-list a {
+    color: #4caf50; /* Green links */
+    text-decoration: none;
+}
+
+.book-list a:hover {
+    text-decoration: underline;
+}
