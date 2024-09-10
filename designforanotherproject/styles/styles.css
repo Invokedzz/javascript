@@ -1,29 +1,33 @@
+/* styles/styles.css */
 
+/* Reset básico de margens e preenchimentos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos básicos do corpo */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
 }
 
-
+/* Estilo para a caixa do link */
 .linkbox {
-    background: #fff;
+    background: #2c2c2c; /* Fundo escuro para a área de conteúdo */
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
 }
 
+/* Estilo para o cabeçalho */
 .header {
-    background: #333;
-    color: #fff;
+    background: #333; /* Fundo escuro para o cabeçalho */
+    color: #ffffff; /* Texto branco */
     padding: 20px;
     border-radius: 8px;
 }
@@ -42,11 +46,11 @@ body {
 
 .header ul a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .header ul a li {
-    background: #444;
+    background: #444; /* Fundo mais claro para itens de menu */
     padding: 10px;
     margin: 5px 0;
     border-radius: 4px;
@@ -54,21 +58,56 @@ body {
 }
 
 .header ul a li:hover {
-    background: #555;
+    background: #555; /* Escurece ao passar o mouse */
 }
 
+/* Estilo para o bloco de chat */
 .chatblock {
-    background: #fff;
+    background: #2c2c2c; /* Fundo escuro para a área de conteúdo */
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
 }
 
-session {
-    display: block;
+/* Estilo para a caixa dentro do chatblock */
+.box {
+    color: #e0e0e0; /* Texto claro */
 }
 
-section {
-    display: block;
+.box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3498db; /* Azul para o título */
+}
+
+.box p {
+    margin-bottom: 10px;
+}
+
+.box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.box ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background: #2c2c2c; /* Fundo escuro para o rodapé */
+    color: #e0e0e0; /* Texto claro */
+    padding: 10px;
+    text-align: center;
+    margin-top: 72px;
+    border-radius: 8px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer p:last-of-type {
+    margin-bottom: 0;
 }
