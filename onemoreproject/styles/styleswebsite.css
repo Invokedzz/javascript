@@ -1,24 +1,21 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos globais */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     background-color: #f0f4f8;
 }
 
-/* Container */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Cabeçalho e navegação */
 header {
     position: relative;
     background: linear-gradient(to bottom, #4a4a4a, #2e2e2e);
@@ -71,7 +68,6 @@ nav ul li a:hover {
     color: #c0c0c0;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     color: #fff;
@@ -105,7 +101,6 @@ nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* Seções */
 section {
     padding: 60px 20px;
     text-align: center;
@@ -114,6 +109,15 @@ section {
 .section-about {
     background: #fff;
     color: #333;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.section-about p {
+    margin-bottom: 20px; 
+    line-height: 1.6; 
 }
 
 .section-services {
@@ -151,15 +155,4 @@ footer {
 
 footer p {
     font-size: 1em;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .services-grid {
-        flex-direction: column;
-    }
-
-    .service-item {
-        margin: 10px 0;
-    }
 }
