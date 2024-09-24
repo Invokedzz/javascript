@@ -1,3 +1,0 @@
-exports.casaPrincipal = (req, res) => {
-    
-}
