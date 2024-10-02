@@ -153,6 +153,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
+    margin-top: 10px;
     background-color: #010e17; 
     color: #ffffff;
     border: none;
@@ -165,6 +166,7 @@ input[type="submit"] {
 }
 
 .register-link {
+    margin-top: 30px;
     color: #010e17;
 }
 
